@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <title>PULSE — Acesso à academia</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.JS" defer></script>
+</head>
+<body>
+  <main class="layout" id="login-screen">
+    <section class="brand-panel" aria-label="PULSE Academia">
+      <a class="brand" href="Index.html" aria-label="PULSE início"><span class="brand-symbol" aria-hidden="true">↗</span>PULSE<span class="brand-dot">.</span></a>
+      <div class="brand-content">
+        <span class="eyebrow"><span></span> PULSE ACADEMIA</span>
+        <h1>Sua academia.<br><span>Em um só lugar.</span></h1>
+        <p>Acesse sua conta para acompanhar<br>as informações da academia.</p>
+        <div class="graphic" aria-hidden="true"><div></div><div></div><div></div></div>
+      </div>
+      <div class="brand-footer"><span>PORTAL DA ACADEMIA</span><span>EST. 2026</span></div>
+    </section>
+
+    <section class="login-panel">
+      <div class="panel-top"><span>ÁREA DO ALUNO</span><span class="status-dot" aria-hidden="true"></span></div>
+      <div class="login-content" id="login-view">
+        <div class="section-marker" aria-hidden="true">01 / ACESSO</div>
+        <h2>Acesse sua conta.</h2>
+        <p class="subtitle">Informe seu usuário e sua senha para entrar.</p>
+        <form id="login-form">
+          <div class="field"><label for="username">Usuário</label><input id="username" name="username" type="text" placeholder="Digite seu usuário" autocomplete="username" autocapitalize="none" autocorrect="off" enterkeyhint="next" required spellcheck="false"></div>
+          <div class="field"><label for="password">Senha</label><div class="password-field"><input id="password" name="password" type="password" placeholder="Digite sua senha" autocomplete="current-password" enterkeyhint="go" required><button class="toggle-password" id="toggle-password" type="button" aria-label="Mostrar senha" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+          <p id="login-message" class="message" role="alert"></p>
+          <button class="primary-button" type="submit">Entrar <span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="access-note"><span aria-hidden="true">●</span> Use os dados de acesso da sua conta.</div>
+      </div>
+      <footer class="login-footer"><span>© 2026 PULSE Academia</span><span>ÁREA DO ALUNO</span></footer>
+    </section>
+  </main>
+  <main class="app-screen" id="app-screen" hidden aria-labelledby="app-title">
+    <header class="app-header"><span class="brand"><span class="brand-symbol" aria-hidden="true">↗</span>PULSE<span class="brand-dot">.</span></span></header>
+    <section class="app-content">
+      <h1 id="app-title" tabindex="-1">O que vai treinar hoje?</h1>
+      <div id="workout-root"></div>
+    </section>
+  </main>
+  <script src="workout.js" defer></script></body>
+</html>
+
+
